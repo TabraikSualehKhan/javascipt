@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--upon clicking h1, myfunc() will be executed, this refers to the element which is clicked, in our case h1  -->
+    <h1 onclick="myfunc(this)">hello</h1>
+    
+    <!--In script Javascript is written-->
+    <script>
+        function myfunc(element){
+            //element is an object which refers to h1 and changing innerhtml changes the content of h1
+            element.innerHTML = 'HELLO';
+        }
+    </script>
+</body>
+</html>
